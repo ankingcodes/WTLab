@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+    let s = 0;
+    function startTimer() {
+      window.setInterval(updateTime, 1000);
+    }
+    function updateTime() {
+      ++s;
+      document.getElementById('sf').innerHTML = s;
+    }
+    startTimer();
+  </script>
+</head>
+
+<body>
+  <h2>Time: <p id='sf'>0</p>
+  </h2>
+</body>
+
+</html>

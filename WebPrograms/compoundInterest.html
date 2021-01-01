@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+    let amt, principal = 1000.0, rate = 0.05, yr;
+    for (yr = 1; yr < 10; yr++) {
+      amt = principal * Math.pow(1.0 + rate, yr);
+      document.writeln(`<p> ${yr} -> ${amt} </p>`)
+    }
+
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>
