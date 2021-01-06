@@ -1,0 +1,22 @@
+<html>
+<head>
+<title> Java Script </title>
+<script type="text/javascript">
+<!--
+function func()
+{
+ window.alert("You have pressed a key!!");
+ //window.alert("You have done keyup event!!");
+ //window.alert("You have done keydown event!!");
+}
+-->
+</script>
+</head>
+<body onkeypress="func()">
+<!--body onkeyup="func()"-->
+<!--body onkeydown="func()"-->
+<h1>
+This is a sample page to illustrate key related events
+</h1>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+<head>
+<title> Java Script</title>
+<script type="text/javascript">
+<!--
+var a=[8,3,34,10,3,37,663,2,6,66];
+document.writeln("<h2>Sorting an array</h2>");
+result("Array before sorting:-&nbsp;&nbsp",a);
+sortArray(a);
+result("Array after sorting:-&nbsp;&nbsp",a);
+function result(h,array)
+{
+ document.writeln("<b><p>"+h + array.join(" ")+"</p></b>");
+}
+function sortArray(arr)
+{
+ var i,j,t;
+ for(i=0;i<arr.length;i++)
+ {
+ for(j=i;j<arr.length;j++)
+ {
+if(arr[i]>arr[j])
+{
+ t=arr[i];
+ arr[i]=arr[j];
+ arr[j]=t;
+}
+ }
+ }
+}
+-->
+</script>
+</head>
+<body >
+</body>
+</html>

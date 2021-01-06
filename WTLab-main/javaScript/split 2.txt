@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<script>
+var x = "";
+function view() {
+ try {
+ addalert("Welcome!");
+ }
+ catch(e) {
+ x = "An error has occurred on this page.\n\n";
+ x += "Click OK \n";
+ x += "Click cancel to return to homepage\n\n";
+ if(!confirm(x)) {
+ document.location;
+ }
+ }
+}
+</script>
+<body>
+<h2>Error Handling</h2>
+<input type="button" value="Display" onclick="view()" />
+</body>
+</html>

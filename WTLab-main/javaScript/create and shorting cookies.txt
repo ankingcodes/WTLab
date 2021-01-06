@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>cookie example</title>
+<script type="text/javascript">
+<!--
+ var now=new Date();
+ var hour=now.getHours();
+ var name;
+
+ if(hour<12)
+ {
+ document.write("<h1>Good Morning");
+ }
+ else
+ {
+ hour=hour-12;
+
+ if(hour<6)
+ document.write("<h1>Good Afternoon");
+ else
+ document.write("<h1>Good evening");
+
+ }
+
+ if(document.cookie)
+ {
+var myCookie=(document.cookie);
+ var cookieTokens;
+ name=cookieTokens[1];
+ }
+ else{
+ name=window.prompt("Please enter your name");
+ document.cookie="name"(name);
+}
+document.writeln(name);
+-->
+</script>
+</head>
+<body>
+<h1>end of script</h1>
+</body>
+</html>

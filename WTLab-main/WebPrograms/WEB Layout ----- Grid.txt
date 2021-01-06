@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.class1
+ {
+ grid-area: headpart;
+ }
+.class2
+{
+ grid-area: body;
+ }
+.class3
+ {
+ grid-area: leftcontent;
+ }
+.class4
+{
+ grid-area: rightcontent; }
+.class5
+{
+ grid-area: endnote;
+ }
+.box-grid {
+display: grid;
+grid-template-areas:
+ 'headpart headpart headpart headpart headpart'
+ 'leftcontent body body body rightcontent'
+ 'endnote endnote endnote endnote rightcontent';
+grid-gap: 5px;
+background-color: #11fff3;
+padding: 10px; }
+.box-grid > div /* selects all the div elements */ {
+ background-color: lightblue;
+ text-align: center;
+ padding: 20px 0;
+ font-size: 40px;
+}
+</style>
+</head>
+<body>
+<h1></h1>
+<p></p>
+<div class="box-grid">
+ <div class="class1">Head part</div>
+ <div class="class2">Body</div>
+ <div class="class3">Leftcontent</div>
+ <div class="class4">Right content</div>
+ <div class="class5"> End note</div>
+</div>
+</body>
+</html>

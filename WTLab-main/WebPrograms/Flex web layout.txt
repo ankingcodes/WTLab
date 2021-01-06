@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!DOCTYPE html>
+<html>
+<head><title>Flex layout</title>
+<style>
+* {
+ box-sizing: border-box; }
+body {
+ font-family: sans-serif;
+ margin: 0; }
+.header {
+ padding: 5px;
+ text-align: center;
+ background: lightblue;
+ color: white; }
+.header h1 {
+ font-size: 60px; }
+.nav {
+ overflow: hidden;
+ background-color: #333000;
+ top: 0; }
+/* Style the navigation bar links */
+.nav a {
+ float: left;
+ display: block;
+ text-decoration: none;
+ text-align: center;
+ color: white;
+ padding: 14px 20px;
+ }
+.nav a:hover {
+ background-color: #ddd111;
+ color: black; }
+/* current link */
+.nav a.current {
+ background-color: #666;
+ color: white; }
+/* The container */
+.box {
+ display: flex;
+ flex-wrap: wrap; }
+/* left content */
+.leftside {
+ flex: 30%;
+ background-color: #f1f1f1;
+ padding: 20px;
+}
+/* Main content in the right section*/
+.rightside {
+ flex: 70%;
+ background-color: white;
+ padding: 20px;
+}
+.inside{
+ background-color: #aab;
+ width: 100%;
+ padding: 20px;
+}
+/* Footer */
+.footer {
+ padding: 20px;
+ text-align: center;
+ background: #FFFF99;
+}
+/* Responsive layout */
+@media screen and (max-width: 700px) {
+ .box {
+ flex-direction: column;
+ }
+}
+/* Responsive layout */
+@media screen and (max-width: 400px) {
+ .nav a{
+ float: none;
+ width: 100%;
+ }
+}
+</style>
+</head>
+<body>
+<div class="header">
+ <h1>Royal Global University</h1>
+ <p>A <b>bridge</b> to the ocean of knowledge</p>
+ <img src="C:/x/s/2020/pic.jpg" ALT="pic" width="1800" height="200" style="border:none" />
+</div>
+<div class="nav">
+ <a href="web.html" class="current">Home</a>
+ <a href="academic.html">Academics</a>
+ <a href="dept.html">Departments</a>
+ <a href="contact.html">Contact</a>
+ </div>
+<div class="box">
+ <div class="leftside">
+ <h2>Current news</h2>
+ <h3>Feed</h3> <p>Educational institution or establishment, in particular one providing higher
+education or specialized professional or vocational training</p>
+<h3>Curriculum</h3>
+<a href="C:/x/s/2020/but.jpg"><img src="C:/x/s/2020/but.jpg" ALT="butterfly"
+width="460" height="200"
+style="border:none" /></a>
+<h3>Subjects</h3>
+<div class="inside" style="height:5px;">First</div><br>
+<a href="C:/x/s/2020/book.jpg"><img src="C:/x/s/2020/book.jpg"
+ALT="book" width="460" height="200" style="border:none" /></a>
+<div class="inside" style="height:5px;">Second</div><br>
+<div class="inside" style="height:5px;">Third</div>
+ </div>
+
+ <div class="rightside">
+ <h2>VISION</h2>
+ <h5> Vision of the college</h5>
+<a href="C:/x/s/2020/read.jpg"><img src="C:/x/s/2020/read.jpg" ALT="read"
+width="1200" height="300"
+style="border:none" /></a>
+ <p> Our college is driven to provide excellent educational opportunities that are responsive to
+the needs of our students, and empower them to meet and exceed challenges as active
+participants in shaping the future of our world.</p>
+ <p> The college provides students with quality educational experiences and support services
+that lead to the successful completion of degrees, transfer, certificates, career/technical education
+and basic skills proficiency.</p>
+ <br>
+ <h2>NEWS FEED</h2>
+ <h5> Sep 4 2020</h5>
+
+ <p>Students to have new curriculum in 2022, framework to be developed: PM Modi. Prime
+Minister Narendra Modi on Friday said that a national curriculum framework will be developed
+and students should have a new curriculum in 2022 when the nation marks the 75th year of
+independence.</p>
+ <p></p>
+ </div>
+ </div>
+<div class="footer">
+ <h2>Accolades</h2>
+</div>
+</body>
+</html>

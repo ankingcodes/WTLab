@@ -1,0 +1,19 @@
+<html>
+<head>
+<title> Java Script </title>
+<script type="text/javascript">
+<!--
+function func()
+{
+ alert("You have Double clicked");
+}
+-->
+</script>
+</head>
+<body bgcolor=green ondblclick="func()">
+<h1>
+ Double click event.
+<br><br> Double click in the document.
+</h1>
+</body>
+</html>

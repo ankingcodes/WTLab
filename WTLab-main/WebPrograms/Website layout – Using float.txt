@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Website Layout</title>
+<style>
+* {
+ box-sizing: border-box; }
+body {
+ margin: 0; }
+/* Style the header */
+.header {
+ background-color: #f1f1f1;
+ padding: 20px;
+ text-align: center; }
+/* Style the navigation bar */
+.nav {
+ overflow: hidden;
+ background-color: #00f633; }
+.nav a {
+ float: left;
+ display: block;
+
+ padding: 12px 14px;
+ text-decoration: none;
+ color: #f1f2f1;
+ text-align: center;
+}
+.nav a:hover {
+ color: black;
+ background-color: #00f633;
+ }
+.inside {
+ float: left;
+ width: 33.33%;
+ padding: 15px;
+}
+.footer{
+float:right;
+height:50px;
+width:100%;
+padding:120px;
+background:#ccc004;
+}
+/* Clear floats after the columns */
+/* Responsive layout */
+@media screen and (max-width:600px) {
+ .inside{
+ width: 100%;
+ }
+}
+</style>
+</head>
+<body>
+<div class="header">
+ <h1>ROYAL GLOBAL UNIVERSITY</h1>
+ <p></p>
+</div>
+<div class="nav">
+ <a href="http://www.google.com">Academics</a>
+ <a href="web.html">Home</a>
+ <a href="#">About Info</a>
+</div>
+<div class="outside">
+ <div class="inside">
+ <h2>Academics</h2>
+ <p>Royal Global University’s (RGU) approach towards formal education is learner-centric
+and as such the University has adopted Choice Based Credit System (CBCS) to allow flexibility in the
+education system, so that students depending upon their interests, learning needs and aptitude can choose
+inter-disciplinary, intra-disciplinary and skill- based courses along with emphasis on enhancing students’
+ability in Communication Skills and Behavioural Approach. CBCS makes education broad-based and at
+par with global standards, which is the need of the hour. The motive of a holistic education is to infuse
+ethical values and morals in an individual’s consciousness along with cultivating intellectual minds to
+bring a positive change in society n velit. </p>
+ </div>
+
+ <div class="inside">
+ <h2>Reports</h2>
+ <p>Core courses are those, the knowledge of which are deemed essential for students registered for the
+program. A student has to compulsorily take these subjects. The subjects designed under this category
+aim to cover the knowledge that a student is expected to imbibe in that particular discipline, along with
+compulsory summer internships, projects, dissertation, field study/clinical exposure etc.. For example, the
+core course for a student pursuing MBA in Human Resource and Marketing in Royal Global University
+will comprise of subjects related to his/her specialisations along with the compulsory foundation courses
+of MBA.</p>
+ </div>
+
+ <div class="inside">
+ <h2>News</h2>
+ <p>Honourable Education Minister, Government of Assam, Sri Siddhartha Bhattacharya will pay a
+visit to Royal Global University (RGU) for the unveiling ceremony of the Bust of Bharat Ratna, Lt. Dr.
+A.P.J. Abdul Kalam and an interactive session on 4 September 2020(tomorrow) at 3.00 PM at Royal
+D’Auditorio, Block-A, 5th Floor, RGU.</p>
+ </div>
+ <div class="footer">
+ <h2> Royal@gmail.com </h2>
+ </div>
+</div>
+</body>
+</html>

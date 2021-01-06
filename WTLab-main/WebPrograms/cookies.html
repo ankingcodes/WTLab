@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript">
+    function writeCookie() {
+      let name = document.getElementById('name').value;
+      console.log(name);
+      document.cookie = `name=${name};`;
+      let ele = document.createElement('p');
+      ele.innerText = `Setting cookies: name=${name}`;
+      let form = document.getElementById('form');
+      form.appendChild(ele);
+    }
+    function readCookie() {
+      var allcookies = document.cookie;
+      let form = document.getElementById('form');
+      let ele = document.createElement('p');
+      let cookieArr = allcookies.split(';');
+      console.log(cookieArr);
+      for (let i = 0; i < cookieArr.length; i++) {
+        name = cookieArr[i].split('=')[0];
+        value = cookieArr[i].split('=')[1];
+        ele.innerText = `${name}: ${value}`;
+        form.appendChild(ele);
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <form id='form' name='myForm' action=''>
+    Enter name: <input type='text' name='customer' id='name' />
+    <input type='button' value='set cookie' onclick='writeCookie();' />
+    <input type='button' value='get cookie' onclick='readCookie();' />
+  </form>
+</body>
+
+</html>

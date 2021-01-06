@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+ font-family: verdana;
+ border-collapse: collapse;
+ width: 50%; }
+td, th {
+ border: 3px solid #ffdddd;
+ text-align: center;
+ padding: 10px; }
+</style>
+</head>
+<body>
+<h2> Table</h2>
+<table>
+ <tr>
+ <th> ID</th>
+ <th> Employee name</th>
+ <th> Branch </th>
+ </tr>
+ <tr>
+ <td> 234</td>
+ <td> Mohana</td>
+ <td> Mumbai</td>
+ </tr>
+ <tr>
+ <td> 222</td>
+
+ <td> Soham</td>
+ <td>Delhi</td>
+ </tr>
+ <tr>
+ <td> 675</td>
+ <td> Martina Holoi</td>
+ <td>Assam</td>
+ </tr>
+ <tr>
+ <td>111</td>
+ <td> Rohan</td>
+ <td> Delhi</td>
+ </tr>
+</table>
+</body>
+</html>

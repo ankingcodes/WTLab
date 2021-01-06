@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form </title>
+</head>
+<body> <center>
+<h2>Registration Form</h2></center>
+<form name=form1 >
+20
+<table name=tab cellspacing=30pt>
+<tr><td align=left><h2>Enter Name :</h2> </td><td align=right><input type=text name=t1
+size=18>
+<tr><td align=left><h2>Enter Age :</h2> </td><td align=right><input type=text name=t2
+maxlength=3 size=18>
+<tr><td align=left><h2>Name of College :</h2> </td><td align=right><textarea name=ta rows=5
+cols=15></textarea>
+<tr><td align=left><h2>Course :</h2> </td><td align=left><input type=radio name=r1
+value="s1">B Tech<br>
+<input type=radio name=r1 value=s2>BSc IT</td>
+<tr><td align=left><h2>Languages known :</h2> </td><td align=left><center>(More than one
+option can be selected)</center>
+<input type=checkbox name=c1 value=c>C<br>
+<input type=checkbox name=c2 value=c++>C++<br>
+<input type=checkbox name=c3 value=python>Python<br>
+<input type=checkbox name=c4 value=java>JAVA<br>
+<input type=checkbox name=c5 value=ruby>Ruby<br>
+<tr><td align=left><h2>Enter your Password :</h2> </td><td align=right><input type=password
+name=t3 size=18>
+<center></table>
+<input type=reset value=" Reset " >
+<input type=submit value=" Submit " >
+</form>
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+<title> String Example </title>
+<script type="text/javascript">
+<!--
+var words="The quick brown fox jumps over the lazy dog dog dog";
+function buttonPressed()
+{
+ var srch=document.getElementById("Forms");
+ var inp=document.getElementById("Vl");
+ srch.elements[2].value= words.indexOf(inp.value);
+ srch.elements[3].value= words.lastIndexOf(inp.value);
+ srch.elements[4].value= words.indexOf(inp.value);
+ srch.elements[5].value= words.lastIndexOf(inp.value);
+}
+-->
+</script>
+</head>
+<body>
+<form id="Forms" action="">
+<h2>The string is :<br>
+The quick brown fox jumps over the lazy dog dog dog</h2>
+<p><h3>Enter the string you want to search for
+<input id="Vl" type="text">
+<input id="search" type="button" value="Search" onclick= "buttonPressed()"><br></h3></p>
+<p>First appearence of the string is at index
+<input id="first" type="text" size="5"><br>
+Last appearence of the string at index
+<input id="last" type="text" size="5"><br></p>
+</form>
+</body>
+</html>

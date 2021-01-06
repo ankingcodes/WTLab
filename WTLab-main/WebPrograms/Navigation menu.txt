@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> WELCOME TO RGU</title>
+<style>
+ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 20;
+ background-color: #ff3333;
+ overflow: hidden;
+ }
+li {
+ float: left;
+}
+li a {
+ display: block;
+ color: white;
+ padding: 16px;
+ text-decoration: none;
+ text-align: center;
+}
+li a:hover {
+ background-color: #00ff00;
+}
+</style>
+</head>
+<body>
+<h2>ROYAL GLOBAL UNIVERSITY</h2>
+<p> </p>
+<ul>
+ <li><a href="#home">Home</a></li>
+ <li><a href="#news">Academics</a></li>
+ <li><a href="#news">Departments</a></li>
+ <li><a href="#contact">Contact</a></li>
+ <li><a href="#about">About Info</a></li>
+</ul>
+</body>
+</html>
+( CSS pseudo class selector used .----- hover selector)

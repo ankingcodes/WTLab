@@ -1,0 +1,24 @@
+<html>
+<head>
+<title> example</title>
+<script type="text/javascript">
+<!--
+var col,q;
+function color(q,col)
+{
+ document.bgColor=col;
+ alert(col);
+}
+-->
+</script>
+</head>
+<body bgcolor=gray>
+<form name=mform>
+<input type="button" value=RED onclick=color(this.form,"RED")>
+<input type="button" value=GREEN onclick=color(this.form,"GREEN")>
+<input type="button" value=BLUE onclick=color(this.form,"BLUE")>
+<input type="button" value=VIOLET onclick=color(this.form,"VIOLET")>
+<input type="button" value=YELLOW onclick=color(this.form,"YELLOW")>
+<input type="button" value=ORANGE onclick=color(this.form,"ORANGE")>
+</body>
+</html>

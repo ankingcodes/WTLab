@@ -1,0 +1,27 @@
+<html>
+<head>
+<title> String Example </title>
+<script type="text/javascript">
+<!--
+function splitting()
+{
+ var inp=document.getElementById("val").value;
+ var tokens=inp.split(" ");
+ document.getElementById("res").value= tokens.join("\n");
+ document.getElementById("sd").value=inp.substring(0,10);
+}
+-->
+</script>
+</head>
+<body>
+<form id="myform" action="">
+<p><h3>Enter a sentence<br>
+<input id="val" type="text" size="40">
+<input type="button" value="Split" onclick= "splitting()"><br></p>
+<p>After splitting the sentence<br>
+<textarea id="res" rows="9" cols="44"></textarea></p>
+<p>The first 10 characters of sentence are
+<input id="sd" type="text" size="15"></p>
+</form>
+</body>
+</html>
